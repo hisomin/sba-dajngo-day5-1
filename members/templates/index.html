@@ -1,0 +1,14 @@
+<h1>I am templates</h1>
+<img src="/static/my_dog.jpg"/>
+{{res}}
+<form>
+	<form method='post' action='/signup'>
+	{% csrf_token %}
+	username: <input type="text" name="username" id='my_test_id'/>
+	email: <input type="text" name="email" />
+	<input type="submit"/>
+	 <br><br><br>
+    post 성공하면  이거 보여줘-  {% if res_data %} {{ res_data }} {% endif %}  -    
+
+</form>
+
